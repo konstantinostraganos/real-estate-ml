@@ -20,7 +20,7 @@ TEST_SIZE = 0.2
 # ── Target configuration ─────────────────────────────────────
 REGRESSION_TARGET = "SalePrice"
 
-# 3-tier classification instead of binary (group project had Standard/Premium)
+# 3-tier classification: Budget / Mid-Range / Premium
 CLASSIFICATION_TARGET = "PropertyTier"
 PROPERTY_TIERS = {
     "labels": ["Budget", "Mid-Range", "Premium"],
