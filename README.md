@@ -19,27 +19,27 @@ Real estate investors need quick, data-driven assessments of properties. This sy
 
 ## Project Structure
 
-real-estate-ml/
-├── src/ # Core ML code
-│ ├── config.py # Central configuration
-│ ├── data_validation.py # Schema and range checks
-│ ├── feature_engineering.py # Domain-driven features
-│ ├── preprocessing.py # sklearn ColumnTransformer pipeline
-│ ├── train.py # Training + MLflow tracking
-│ └── evaluate.py # Metrics + SHAP explainability
-├── api/ # FastAPI prediction service
-│ ├── app.py # API endpoints
-│ └── schemas.py # Pydantic request/response models
-├── tests/ # Automated tests
-│ ├── test_features.py # Feature engineering tests
-│ └── test_api.py # API endpoint tests
-├── notebooks/
-│ └── 01_eda.ipynb # Exploratory Data Analysis
-├── models/ # Saved model artifacts (gitignored)
-├── plots/ # SHAP and evaluation plots
-├── Dockerfile # Container for the API
-├── requirements.txt # Python dependencies
-└── .github/workflows/ci.yml # CI pipeline
+    real-estate-ml/
+    ├── src/                              # Core ML code
+    │   ├── config.py                     # Central configuration
+    │   ├── data_validation.py            # Schema and range checks
+    │   ├── feature_engineering.py        # Domain-driven features
+    │   ├── preprocessing.py              # sklearn ColumnTransformer pipeline
+    │   ├── train.py                      # Training + MLflow tracking
+    │   └── evaluate.py                   # Metrics + SHAP explainability
+    ├── api/                              # FastAPI prediction service
+    │   ├── app.py                        # API endpoints
+    │   └── schemas.py                    # Pydantic request/response models
+    ├── tests/                            # Automated tests
+    │   ├── test_features.py              # Feature engineering tests
+    │   └── test_api.py                   # API endpoint tests
+    ├── notebooks/
+    │   └── 01_eda.ipynb                  # Exploratory Data Analysis
+    ├── models/                           # Saved model artifacts (gitignored)
+    ├── plots/                            # SHAP and evaluation plots
+    ├── Dockerfile                        # Container for the API
+    ├── requirements.txt                  # Python dependencies
+    └── .github/workflows/ci.yml         # CI pipeline
 
 
 ## Architecture
