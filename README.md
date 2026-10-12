@@ -91,6 +91,8 @@ python -m src.evaluate
 pytest tests/ -v
 ```
 
+CI runs the feature-engineering tests on every push. The API tests need the trained model files in `models/`, which are produced by training and not stored in Git, so they run locally after training.
+
 ### Start API locally
 ```bash
 uvicorn api.app:app --reload --host 0.0.0.0 --port 8000
